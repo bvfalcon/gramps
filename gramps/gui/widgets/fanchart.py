@@ -144,8 +144,8 @@ class FanChartBaseWidget(Gtk.DrawingArea):
         # as standard names, but set them inactive so they don't show up in
         # name editor or selector.
         name_displayer.set_name_format(
-            [(TWO_LINE_FORMAT_1, 'fanchart_name_line1', '%l', False),
-             (TWO_LINE_FORMAT_2, 'fanchart_name_line2', '%f %s', False)])
+            [(TWO_LINE_FORMAT_1, 'fanchart_name_line1', '%m', False),
+             (TWO_LINE_FORMAT_2, 'fanchart_name_line2', '%f %y', False)])
         self.connect("button_release_event", self.on_mouse_up)
         self.connect("motion_notify_event", self.on_mouse_move)
         self.connect("button-press-event", self.on_mouse_down)
